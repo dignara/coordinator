@@ -1,0 +1,61 @@
+{
+  "name": "coordinator",
+  "version": "1.0.0",
+  "description": "Coordinator FE",
+  "private": true,
+  "authors": [
+    "seongcheol.gwon <gsckorea@gmail.com>"
+  ],
+  "scripts": {
+    "init": "npm install",
+    "update": "npm update",
+    "build:debug": "webpack --mode=development",
+    "build": "webpack --mode=production --progress && uglifyjs src/main/resources/static/js/build.js --output src/main/resources/static/js/build.js"
+  },
+  "dependencies": {
+    "@apollo/client": "3.11.8",
+    "@reduxjs/toolkit": "2.2.7",
+    "lodash": "4.17.21",
+    "react": "18.3.1",
+    "react-bootstrap": "2.7.3",
+    "react-select": "5.8.1",
+    "react-text-rotator": "1.2.0",
+    "react-dom": "18.3.1",
+    "react-hot-toast": "2.4.1",
+    "react-redux": "9.1.2",
+    "react-router": "6.26.2",
+    "react-router-dom": "6.26.2",
+    "react-tabs": "6.0.2",
+    "uglify-js": "3.19.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.25.2",
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "@babel/plugin-transform-runtime": "7.25.4",
+    "@babel/preset-env": "7.25.4",
+    "@babel/preset-react": "7.24.7",
+    "@babel/runtime": "7.25.6",
+    "babel-loader": "9.2.1",
+    "buffer": "6.0.3",
+    "stream-browserify": "3.0.0",
+    "css-loader": "7.1.2",
+    "file-loader": "6.2.0",
+    "html-webpack-plugin": "5.6.0",
+    "iso-morphic-style-loader": "2.0.1",
+    "json-minimizer-webpack-plugin": "5.0.0",
+    "less": "4.2.0",
+    "less-loader": "12.2.0",
+    "tty-browserify": "0.0.1",
+    "os-browserify": "0.3.0",
+    "mini-css-extract-plugin": "2.9.1",
+    "sass": "1.79.3",
+    "sass-loader": "16.0.2",
+    "path": "0.12.7",
+    "style-loader": "4.0.0",
+    "url-loader": "4.1.1",
+    "webpack": "5.94.0",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "5.1.0",
+    "webpack-modules": "1.0.0"
+  }
+}
